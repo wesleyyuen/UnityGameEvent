@@ -1,0 +1,11 @@
+{
+  "displayName": "Game Event",
+  "author": "Wesley Yuen",
+  "version": "0.1.0",
+  "name": "com.wesleyyuen.unitygameevent",
+  "documentationUrl": "https://github.com/wesleyyuen/UnityGameEvent",
+  "changelogUrl": "https://github.com/wesleyyuen/UnityGameEvent/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/wesleyyuen/UnityGameEvent/blob/main/LICENSE.md",
+  "description": "A ScriptableObject based event system for decoupling monobehaviour components.",
+  "unity": "2020.1"
+}
