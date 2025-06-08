@@ -6,14 +6,17 @@ namespace GameEvents
 {
     public abstract class GenericGameEvent<T> : ScriptableObject
     {
+        [SerializeField] private T _currentValue;
         [SerializeField] private bool _autoCleanupListeners = true;
         
+        public T CurrentValue => _currentValue;
         public UnityEvent<T> OnInvoked;
         
         private List<UnityAction<T>> _listeners = new List<UnityAction<T>>();
 
         public void Invoke(T param)
         {
+            _currentValue = param;
             OnInvoked.Invoke(param);
         }
 
